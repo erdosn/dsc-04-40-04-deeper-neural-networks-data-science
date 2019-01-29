@@ -98,6 +98,9 @@ In the lab, you'll learn how to vectorize this!
 
 Until now, we've only discussed the sigmoid activation function. The sigmoid function is nearly always the go-to in the output layer of a binary classification problem, but in hidden layers, many other. In the code block below, you can find some functions we created so we can plot them below. Note that we plot the actual activation functions as well as their derivatives!
 
+# What does the sigmoid function 
+maps each input between 0 and 1 and classify
+
 
 ```python
 import numpy as np
@@ -173,12 +176,12 @@ plt.plot(z, dy, 'b')
 
 
 
-    [<matplotlib.lines.Line2D at 0x10ea11438>]
+    [<matplotlib.lines.Line2D at 0x112093198>]
 
 
 
 
-![png](index_files/index_33_1.png)
+![png](index_files/index_34_1.png)
 
 
 ## The hyperbolic tangent (tanh) function
@@ -199,12 +202,12 @@ plt.plot(z, dy, 'b')
 
 
 
-    [<matplotlib.lines.Line2D at 0x10ea77f98>]
+    [<matplotlib.lines.Line2D at 0x11545b550>]
 
 
 
 
-![png](index_files/index_36_1.png)
+![png](index_files/index_37_1.png)
 
 
 A disadvantage of both tanh and sigmoid is that, when $z$ gets quite large or small, the derivative of the slopes of these functions become very small, genre 0.0001. This will slow down gradient descent. You can see in the tanh ploy that this already starts happening for values of $z > 2$ or $z < 2$. The next few activation functions will try to overcome this issue.
@@ -227,12 +230,12 @@ plt.plot(z, dy, 'b')
 
 
 
-    [<matplotlib.lines.Line2D at 0x10ebb67b8>]
+    [<matplotlib.lines.Line2D at 0x115540160>]
 
 
 
 
-![png](index_files/index_40_1.png)
+![png](index_files/index_41_1.png)
 
 
 ## The Rectified Linear Unit function
@@ -254,12 +257,12 @@ plt.plot(z, y, 'r')
 
 
 
-    [<matplotlib.lines.Line2D at 0x10ec8b7b8>]
+    [<matplotlib.lines.Line2D at 0x11560af98>]
 
 
 
 
-![png](index_files/index_43_1.png)
+![png](index_files/index_44_1.png)
 
 
 ## The leaky Rectified Linear Unit function
@@ -282,12 +285,12 @@ plt.plot(z, dy, 'b')
 
 
 
-    [<matplotlib.lines.Line2D at 0x10ed5a0b8>]
+    [<matplotlib.lines.Line2D at 0x11567ee80>]
 
 
 
 
-![png](index_files/index_46_1.png)
+![png](index_files/index_47_1.png)
 
 
 ## Additional Resources
